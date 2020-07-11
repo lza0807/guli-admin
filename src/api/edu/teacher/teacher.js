@@ -6,8 +6,8 @@ export default {
         return request({
             // url: '/eduservice/teacher/pageCond',
             url: `/eduservice/teacher/pageCond/${current}/${limit}`,
-            method: 'get',
-            teacherQuery
+            method: 'post',
+            data:teacherQuery
           })
     }
 }
